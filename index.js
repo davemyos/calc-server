@@ -1,16 +1,9 @@
-// const server = require('http').createServer();
-// const options={
-//   cors:true,
-//   origins:["http://127.0.0.1:5000"],
-//  };
-
-
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const options={
   cors:true,
-  origins:["http://127.0.0.1:5000"],
+  origins:["http://127.0.0.1:5000","https://myos-calc-server.herokuapp.com/"],
  };
 
 const io = require('socket.io')(server, options);
